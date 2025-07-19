@@ -11,6 +11,10 @@ This is the repository for an open source project that anyone will be able to de
 - Cloudflare R2 (storing images and other assets)
 - Cloudflare Turnstile for captcha
 
+## Getting started
+
+- Run `npm install` inside the `webapp` directory.
+
 ## Key guidelines
 
 - Make sure `npm run lint` passes.
@@ -20,3 +24,4 @@ This is the repository for an open source project that anyone will be able to de
   - Mocks / Facades for things interacting with external services.
   - E2E playwright tests in subfolders in `/webapp/test/e2e`.
 - Use libraries, no need to re-invent the wheel.
+- Try to break down complex pages into components which can be re-usable in other places and tested individually.
