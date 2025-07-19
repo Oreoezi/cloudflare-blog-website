@@ -21,11 +21,11 @@ export const actions: Actions = {
 };
 
 function requireLogin() {
-  const { locals } = getRequestEvent();
+	const { locals } = getRequestEvent();
 
-  if (!locals.user) {
-    return redirect(302, "/demo/lucia/login");
-  }
+	if (!locals.user) {
+		return redirect(302, "/demo/lucia/login");
+	}
 
-  return locals.user;
+	return locals.user;
 }

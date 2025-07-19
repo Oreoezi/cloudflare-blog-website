@@ -25,6 +25,10 @@ jobs:
         run: npm install
         working-directory: webapp
 
+      - name: Install playwright
+        run: npx playwright install
+        working-directory: webapp
+
       - name: Run Jest unit tests
         run: npm run test:unit
         working-directory: webapp

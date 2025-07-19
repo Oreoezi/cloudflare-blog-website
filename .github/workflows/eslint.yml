@@ -21,6 +21,10 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install playwright
+        run: npx playwright install
+        working-directory: webapp
+
       - name: Install dependencies
         run: npm install
         working-directory: webapp
